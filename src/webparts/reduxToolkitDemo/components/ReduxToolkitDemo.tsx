@@ -3,8 +3,14 @@ import styles from "./ReduxToolkitDemo.module.scss";
 import { IReduxToolkitDemoProps } from "./IReduxToolkitDemoProps";
 import { escape } from "@microsoft/sp-lodash-subset";
 import "bootstrap/dist/css/bootstrap.css";
-import axios from "axios";
-import { IUser } from "../models/IUser";
+
+import {HashRouter, Route, Switch } from  "react-router-dom";
+
+import PostsContainer from "./pages/posts/PostsContainer";
+import UsersContainer from "./pages/users/UsersContainer";
+import PageNotFound from "./pages/errors/PageNotFound";
+import NavBar from "../shared/NavBar";
+import MessageBar from "../shared/MessageBar";
 
 export default class ReduxToolkitDemo extends React.Component<
   IReduxToolkitDemoProps,
@@ -20,12 +26,23 @@ export default class ReduxToolkitDemo extends React.Component<
     } = this.props;
 
     return (
-      <>
-        <h1 className="">ReduxToolkit Demo</h1>
+
+       <HashRouter>
         <div className="container">
-          Content
+         
+          <NavBar/>
+          <MessageBar text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, tempore!" status="info"/>
+          <div className="container">
+          <Switch>
+              <Route exact path="/" component={PostsContainer}/>
+              <Route exact path="/posts" component={PostsContainer}/>
+              <Route exact path="/users" component={UsersContainer}/>
+              <Route component={PageNotFound} />
+          </Switch>
+          </div>
         </div>
-      </>
+      </HashRouter>
+
     );
   }
 }

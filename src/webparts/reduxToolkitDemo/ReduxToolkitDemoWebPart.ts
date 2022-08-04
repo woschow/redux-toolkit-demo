@@ -33,7 +33,7 @@ export default class ReduxToolkitDemoWebPart extends BaseClientSideWebPart<IRedu
       }
     );
 
-    ReactDom.render(element, this.domElement);
+    ReactDom.render(element ,  this.domElement);
   }
 
   protected onInit(): Promise<void> {
