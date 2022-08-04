@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "redux-toolkit-demo-client-side-solution",
+    "id": "a687bd13-57c8-4e07-a55a-0db94bfc436a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "redux-toolkit-demo description"
+      },
+      "longDescription": {
+        "default": "redux-toolkit-demo description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "redux-toolkit-demo Feature",
+        "description": "The feature that activates elements of the redux-toolkit-demo solution.",
+        "id": "d7228dc1-ddcd-4270-9f94-e7947de05de7",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/redux-toolkit-demo.sppkg"
+  }
+}
