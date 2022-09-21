@@ -1,11 +1,11 @@
 import * as React from "react";
+import * as strings from "ReduxToolkitDemoWebPartStrings";
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const PageNotFound = () => {
-    console.log('404')
     return (
-        <h2>404</h2>
+        <h3>{strings.Error404}</h3>
     );
 }
 
 export default PageNotFound;
+

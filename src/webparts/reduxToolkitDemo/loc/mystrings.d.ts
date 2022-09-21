@@ -6,6 +6,16 @@ declare interface IReduxToolkitDemoWebPartStrings {
   AppLocalEnvironmentTeams: string;
   AppSharePointEnvironment: string;
   AppTeamsTabEnvironment: string;
+  PostsContainerAPITitle: string;
+  PostsContainerSliceTitle: string;
+  AppTitle: string;
+  "BtnNewTitle": string;
+  "BtnDeleteTitle": string;
+  "BtnUpdateTitle": string;
+  "ReduxBasics": string;
+  "Error404": string;
+  "BtnIncrementTitle": string;
+  "BtnDecrementTitle": string;
 }
 
 declare module 'ReduxToolkitDemoWebPartStrings' {
