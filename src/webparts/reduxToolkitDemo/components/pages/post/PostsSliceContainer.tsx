@@ -1,11 +1,11 @@
 import * as React from "react";
-import {useEffect} from "react";
-import {useAppDispatch, useAppSelector} from "../../../hooks/redux";
+import { useEffect } from "react";
 import * as strings from "ReduxToolkitDemoWebPartStrings";
-import {addPost, deletePost, fetchPosts, updatePost} from "../../../store/slice/actionCreators";
-import {IPost} from "../../../models/IPost";
-import PostItem from "./PostItem";
+import { useAppDispatch, useAppSelector } from "../../../hooks/redux";
+import { IPost } from "../../../models/IPost";
 import MessageBar from "../../../shared/MessageBar";
+import { addPost, deletePost, fetchPosts, updatePost } from "../../../store/actions/actionCreators";
+import PostItem from "./PostItem";
 
 const PostsSliceContainer = () => {
 

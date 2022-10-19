@@ -1,7 +1,7 @@
 import * as React from "react";
-import {IListItemProps} from "../../../models/IListItemProps";
-import {IPost} from "../../../models/IPost";
 import * as strings from "ReduxToolkitDemoWebPartStrings";
+import { IListItemProps } from "../../../models/IListItemProps";
+import { IPost } from "../../../models/IPost";
 
 const PostItem = ({data, remove, update}: IListItemProps<IPost>) => {
 

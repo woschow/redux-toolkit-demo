@@ -1,16 +1,6 @@
 {
   "posts": [
     {
-      "id": 2,
-      "title": "sddsdsdssd",
-      "author": "typicode"
-    },
-    {
-      "id": 3,
-      "title": "json-server 03",
-      "author": "typicode"
-    },
-    {
       "id": 4,
       "title": "json-server 04",
       "author": "typicode"
@@ -54,18 +44,6 @@
       "id": 12,
       "title": "json-server 12",
       "author": "typicode"
-    },
-    {
-      "title": "Test 03",
-      "id": 15
-    },
-    {
-      "title": "fdfdfdfd",
-      "id": 16
-    },
-    {
-      "title": "dfdfdfdffdfd",
-      "id": 17
     }
   ],
   "profile": {

@@ -1,6 +1,6 @@
-import {IPost} from "../../models/IPost";
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {IAppState} from "../models/appState";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { IPost } from "../../models/IPost";
+import { IAppState } from "../models/appState";
 
 const initialState: IAppState<IPost> = {
     data: [],
@@ -42,8 +42,6 @@ export const postsSlice = createSlice({
 
             let searchResult = state.data.filter(u => u.id === action.payload.id);
 
-            console.log('searchResult', searchResult);
-
             if(searchResult && searchResult.length > 0){
                 state.data.filter(u => u.id === action.payload.id)[0].title = action.payload.title;
             }
@@ -67,6 +65,11 @@ export const postsSlice = createSlice({
     }
 })
 
+export const postsActions = postsSlice.actions;
+export const postsReducer = postsSlice.reducer;
+
 export default postsSlice.reducer;
+
+
 
 

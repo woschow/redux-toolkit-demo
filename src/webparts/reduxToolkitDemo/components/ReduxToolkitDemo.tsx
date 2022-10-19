@@ -1,19 +1,19 @@
-import * as React from "react";
-import {IReduxToolkitDemoProps} from "./IReduxToolkitDemoProps";
 import "bootstrap/dist/css/bootstrap.css";
+import * as React from "react";
+import { IReduxToolkitDemoProps } from "./IReduxToolkitDemoProps";
 
-import {HashRouter, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import PostsAPIContainer from "./pages/post/PostsAPIContainer";
 import PostsSliceContainer from "./pages/post/PostsSliceContainer";
 
-import PageNotFound from "./pages/errors/PageNotFound";
+import { Provider } from "react-redux";
 import Header from "../shared/Header";
-import {Provider} from "react-redux";
-import {setupStore} from "../store";
 import Counter from "./pages/counter/Counter";
+import PageNotFound from "./pages/errors/PageNotFound";
 
-const store = setupStore();
+import { store } from "../store";
+
 
 export default class ReduxToolkitDemo extends React.Component<IReduxToolkitDemoProps, {}> {
     public render(): React.ReactElement<IReduxToolkitDemoProps> {
@@ -27,7 +27,7 @@ export default class ReduxToolkitDemo extends React.Component<IReduxToolkitDemoP
 
         return (
             <Provider store={store}>
-                <HashRouter>
+                <BrowserRouter>
                     <div className="container">
                         <Header/>
                         <div className="container">
@@ -39,7 +39,7 @@ export default class ReduxToolkitDemo extends React.Component<IReduxToolkitDemoP
                             </Switch>
                         </div>
                     </div>
-                </HashRouter>
+                </BrowserRouter>
             </Provider>
         );
     }

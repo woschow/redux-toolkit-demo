@@ -1,16 +1,16 @@
 import * as React from "react";
 
+import * as strings from "ReduxToolkitDemoWebPartStrings";
+import { AppSettings } from "../../../../../appSettings";
+import { IPost } from "../../../models/IPost";
+import MessageBar from "../../../shared/MessageBar";
 import {
     useCreatePostMutation,
     useDeletePostMutation,
     useFetchAllPostsQuery,
     useUpdatePostMutation
-} from '../../../store/api/posts.api'
-import {AppSettings} from "../../../../../appSettings";
+} from '../../../store/slice/postsAPISlice';
 import PostItem from "./PostItem";
-import {IPost} from "../../../models/IPost";
-import * as strings from "ReduxToolkitDemoWebPartStrings";
-import MessageBar from "../../../shared/MessageBar";
 
 const PostsAPIContainer = () => {
 
